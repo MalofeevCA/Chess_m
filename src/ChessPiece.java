@@ -10,6 +10,8 @@ abstract public class ChessPiece {
     }
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn){
         return chek.booleanValue();
-
+    }
+    abstract getSymbol(){
+        return ChessPiece;
     }
 }
