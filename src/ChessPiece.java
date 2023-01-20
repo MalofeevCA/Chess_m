@@ -5,13 +5,7 @@ abstract public class ChessPiece {
     public ChessPiece(String color) {
         this.color = color;
     }
-    public String getColor(){
-        return color;
-    }
-    public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn){
-        return chek.booleanValue();
-    }
-    abstract String getSymbol(){
-        return ChessPiece;
-    }
+    abstract public String getColor();
+    abstract public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn);
+    abstract public String getSymbol();
 }
